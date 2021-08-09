@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 755
+  ClientWidth = 1103
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Viewport3D1: TViewport3D
+    Align = Contents
+    Camera = Camera1
+    Size.Width = 1103.000000000000000000
+    Size.Height = 755.000000000000000000
+    Size.PlatformDefault = False
+    UsingDesignCamera = False
+    object Sphere1: TSphere
+      RotationAngle.Y = 278.445648193359400000
+      Width = 10.000000000000000000
+      Height = 10.000000000000000000
+      Depth = 10.000000000000000000
+      TwoSide = True
+      OnMouseDown = Sphere1MouseDown
+      OnMouseMove = Sphere1MouseMove
+      OnMouseUp = Sphere1MouseUp
+      SubdivisionsAxes = 50
+      SubdivisionsHeight = 50
+      MaterialSource = TextureMaterialSource1
+      Quanternion = '(0,-0.0810573101043701,0,0.996702194213867)'
+      object TextureMaterialSource1: TTextureMaterialSource
+        Left = 108
+        Top = 84
+      end
+      object Camera1: TCamera
+        AngleOfView = 45.000000000000000000
+        Position.Z = 0.100000001490116100
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+      end
+    end
+  end
+  object Button1: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 2
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 112
+    Top = 144
+  end
+end
